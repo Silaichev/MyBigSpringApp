@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new bookmark</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+<header th:insert="blocks/header::header"></header>
+<div class="container mt-5 md-5">
+    <form action="/bookmarks/add" method="post">
+        <input type="text" name="anons" placeholder="Anons" class="form-control"><br>
+        <input type="text" name="site" placeholder="Site" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Add new bookmark</button>
+    </form>
+</div>
+</body>
+</html>
